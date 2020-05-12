@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso JavaScript - Manipulando a DOM</title>
+    </head>
+
+    <body>
+        <div id="app">
+           <div class="box"></div> 
+        </div>
+
+        <script>
+          //podemos também controlar as estilizações CSS dos elementos pelo javaScript  
+            var boxElement = document.querySelector('.box');
+            boxElement.style.width = 200;
+            boxElement.style.height = 200;
+            boxElement.style.backgroundColor = '#f00';
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso JavaScript - Manipulando a DOM</title>
+    </head>
+
+    <body>
+        <div id="app">
+            <input type="text" name="nome"/>
+            <button class="botao">Adicionar</button>
+        </div>
+
+        <script>
+            var elementoBotao = document.querySelector('button.botao');
+            var elementoInput = document.querySelector('input[name="nome"]');
+
+            elementoBotao.onclick = function exibeAlerta(){
+                var texto = elementoInput.value;
+                alert(texto)
+            }
+        </script>
+    </body>
+
+</html>

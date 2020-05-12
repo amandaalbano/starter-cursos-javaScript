@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Curso JavaScript - Intervalo e Timeout</title>
+    </head>
+    <body>
+        <script>
+            function exibeAlgo(){
+                console.log("Hello World");
+            }
+            //passei a função por parâmetro para referenciar (passar o escopo da 
+            //função para outro local) a função e ela ser executada várias vezes.
+            // Se colocasse os parênteses estaria chamando a função e ela 
+            //seria executada apenas uma vez.
+
+            //setInterval - executa várias vezes o script
+            //setTimeOut - executa apenas uma vez, mas com algum delay
+            setInterval(exibeAlgo,2000);            
+
+            function exibeMensagem(){
+                console.log("Olá mundo!");
+            }
+            setTimeout(exibeMensagem, 5000);
+
+        </script>
+    </body>
+</html>
